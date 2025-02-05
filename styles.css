@@ -6,3 +6,263 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+/* 工具栏样式 */
+.mindmap-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+    gap: 4px;
+    flex-wrap: wrap;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.mindmap-toolbar-right {
+    margin-left: auto;
+    display: flex;
+    gap: 4px;
+}
+
+.mindmap-toolbar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-normal);
+    padding: 0;
+    transition: background-color 0.2s ease;
+}
+
+.mindmap-toolbar-button:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.mindmap-toolbar-button:active {
+    background-color: var(--background-modifier-active);
+}
+
+.mindmap-toolbar-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 容器样式 */
+.mindmap-wrapper {
+    width: 100%;
+    height: calc(100% - 50px);
+    position: relative;
+    background-color: var(--background-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.mindmap-container {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-primary);
+}
+
+/* 适配 Obsidian 主题 */
+.mind-map-container {
+    background-color: var(--background-primary) !important;
+}
+
+.mind-map-node {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-normal) !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.mind-map-node:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+.mind-map-node.active {
+    background-color: var(--interactive-accent) !important;
+    color: var(--text-on-accent) !important;
+}
+
+.mind-map-line {
+    stroke: var(--background-modifier-border) !important;
+}
+
+/* 右键菜单样式 */
+.mind-map-context-menu {
+    background-color: var(--background-primary) !important;
+    border: 1px solid var(--background-modifier-border) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mind-map-context-menu-item {
+    color: var(--text-normal) !important;
+}
+
+.mind-map-context-menu-item:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+/* 编辑框样式 */
+.mind-map-text-edit {
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+    border: 1px solid var(--background-modifier-border) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 展开/收起按钮 */
+.mind-map-expand-btn {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-muted) !important;
+    border: 1px solid var(--background-modifier-border) !important;
+}
+
+.mind-map-expand-btn:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+#jsmind_container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mindmap-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Markmap 主题适配 Obsidian */
+.markmap-node {
+    fill: var(--text-normal);
+}
+
+.markmap-node-circle {
+    fill: var(--background-secondary);
+    stroke: var(--background-modifier-border);
+}
+
+.markmap-link {
+    stroke: var(--background-modifier-border);
+}
+
+.markmap-node-text {
+    fill: var(--text-normal);
+}
+
+/* jsMind 主题适配 Obsidian */
+jmnodes {
+    background-color: var(--background-primary);
+}
+
+jmnode {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-text);
+}
+
+jmnode:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+jmnode.selected {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+jmexpander {
+    border-color: var(--background-modifier-border);
+}
+
+jmexpander:hover {
+    border-color: var(--interactive-accent);
+}
+
+/* 思维导图节点样式 */
+.smm-node {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.smm-node:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.smm-node.active {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.smm-line {
+    stroke: var(--background-modifier-border);
+}
+
+/* 右键菜单样式 */
+.smm-context-menu {
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 4px 0;
+}
+
+.smm-context-menu-item {
+    padding: 6px 12px;
+    cursor: pointer;
+    color: var(--text-normal);
+}
+
+.smm-context-menu-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+/* 编辑框样式 */
+.smm-text-edit {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* 展开/收起按钮 */
+.smm-expand-btn {
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.smm-expand-btn:hover {
+    background-color: var(--background-modifier-hover);
+}

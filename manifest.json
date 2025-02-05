@@ -1,10 +1,10 @@
 {
-	"id": "mxmind",
-	"name": "Mxmind Mindmap",
-	"version": "1.0.15",
+	"id": "obsidian-mindmap-online",
+	"name": "思维导图",
+	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Convert Markdown files to a mind map, mind map editor. export to image or pdf.",
-	"author": "mxmind",
-	"authorUrl": "https://mxmind.com",
+	"description": "一个支持在线编辑的思维导图插件，支持浏览器和内嵌模式",
+	"author": "WindLunas",
+	"authorUrl": "https://www.windlunas.cn",
 	"isDesktopOnly": false
 }
