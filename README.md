@@ -1,9 +1,9 @@
 # Obsidian 思维导图插件
 
-这是一个支持在线编辑的思维导图插件，可以在 Obsidian 内部或浏览器中打开。基于 [WindLunas](https://www.windlunas.cn) 的思维导图服务实现。
+这是一个支持在线编辑的思维导图插件，可以在 Obsidian 内部或浏览器中打开。基于思维导图工具实现。
 
-思维导图工具：https://wanglin2.github.io/mind-map-docs/
-可使用docker部署
+思维导图工具：https://github.com/wanglin2/mind-map
+可使用docker部署后获得地址：
 
 ## 功能特点
 
@@ -70,8 +70,8 @@ npm run build
 ## 致谢
 
 - [Obsidian](https://obsidian.md/) - 知识管理工具
-- [WindLunas](https://www.windlunas.cn) - 思维导图服务提供者
+- [导图工具](https://github.com/wanglin2/mind-map) - 思维导图服务提供者
 
 ## 许可证
 
-[MIT](LICENSE) © WindLunas
+[MIT](LICENSE) © xinlan222
